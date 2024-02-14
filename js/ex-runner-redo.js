@@ -11,7 +11,7 @@ var nums = [3, 2, 0, 2, 2, 0, 3]
 var numsCount = [0, 0, 0, 0]
 
 nums.forEach(num => {
-    if(numsCount[num]) numsCount[num]++
+    if (numsCount[num]) numsCount[num]++
     else numsCount[num] = 1
 })
 console.log('ex44:', numsCount);
@@ -22,8 +22,8 @@ console.log('ex44:', numsCount);
 var nums = [1, 2, 3, 4, 5]
 
 function multBy(nums, multiplier, isImmutable) {
-    var modifiedNums = (isImmutable) ?  nums.slice() : nums
+    var modifiedNums = (isImmutable) ? nums.slice() : nums
     modifiedNums = nums.map((num) => (num * multiplier))
     return modifiedNums
 }
-console.log('ex46:',multBy(nums, 2, true));
+console.log('ex46:', multBy(nums, 2, true));
